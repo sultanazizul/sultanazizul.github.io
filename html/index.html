@@ -1,41 +1,58 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portofolio</title>
 
-<head>
-    <title>Website Percobaan</title>
-    <link rel="stylesheet" href="style.css" />
-</head>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Poppins:ital,wght@0,100;0,300;0,400;0,700;0,800;0,900;1,700&display=swap"
+      rel="stylesheet"
+    />
 
-<body>
-    <!-- NAVBAR -->
-    <div class="container-navbar">
-        <ul class="ul-navbar">
-            <li class="li-navbar">
-                <a href="#" class="a-navbar">Home</a>
-            </li>
-            <li class="li-navbar">
-                <a href="about.html" class="a-navbar">About</a>
-            </li>
-            <li class="li-navbar">
-                <a href="contact.html" class="a-navbar">Contact</a>
-            </li>
-        </ul>
+    <!-- Feather Icon-->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <div class="navbar">
+      <div class="navbar-logo">
+        <a href="#"><img src="../img/Instagram_logo.png" alt="logo" /></a>
+      </div>
     </div>
-    <!-- NAVBAR END -->
+    <!-- Navbar End -->
 
-    <!-- CONTENT -->
-    <div class="container-content">
-        <a target="_blank" rel="noopener" href="https://ths.li/XXqqD3">
-            <img src="pprofil.jpg" class="img-content">  
-        </a>
-       
-    </div>
-    <!-- CONTENT END -->
+    <!-- Hero Section Start -->
+    <section class="hero" id="hero">
+      <div class="row">
+        <div class="content">
+          <h4>Hello, i'ts me</h4>
+          <h1>Sultan Azizul<span>.</span></h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
+            laboriosam perspiciatis quidem illum fugit rem pariatur amet dolore
+            quod cum.
+          </p>
+          <a href="#" class="cta">Scroll for more.</a>
+        </div>
+        <div class="hero-photo"><img src="../img/pp.png" alt="photo" /></div>
+      </div>
+    </section>
+    <!-- Hero Section End -->
 
-    <!-- FOOTER -->
-    <div class="container-footer">
-        <h1 class="h1-1">indeks hateemel</h1>
-    </div>
-    <!-- FOOTER END -->
-</body>
+    <!-- Feather Icon  -->
+    <script>
+      feather.replace();
+    </script>
 
-</html> 
+    <!-- Javascript -->
+    <script src="js/index.js"></script>
+  </body>
+</html>
