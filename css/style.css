@@ -6,10 +6,14 @@
   color: white;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  background-color: #000000;
+  background-color: rgb(0, 0, 0);
   font-family: "Poppins", sans-serif;
-  min-height: 2000px;
+  /* min-height: 2000px; */
 }
 
 /* Navbar */
@@ -19,13 +23,14 @@ body {
   display: block;
   position: fixed;
   width: 100%;
-  height: 30%;
+  height: 60%;
   top: 0;
   background: linear-gradient(
     180deg,
     rgba(1, 1, 3, 1) 8%,
     rgba(255, 255, 255, 0) 25%
   );
+  z-index: 1;
 }
 
 .navbar .navbar-logo img {
@@ -33,6 +38,7 @@ body {
   margin-left: 12rem;
   margin-top: 1.5rem;
   position: fixed;
+  /* z-index: -7; */
   /* background-color: aqua; */
 }
 
@@ -53,7 +59,7 @@ section {
 
 .hero .row .content {
   /* background-color: blueviolet; */
-  margin-right: 60%;
+  margin-right: 32.6rem;
   /* flex: 1 1 40rem; */
 }
 
@@ -76,17 +82,22 @@ section {
 
 .hero .row .content p {
   line-height: 1.5rem;
+  text-align: justify;
+  color: rgba(255, 255, 255, 0.712);
 }
 
 .hero .row .cta {
   margin-top: 2rem;
+}
+.hero .row .cta a {
   padding-bottom: 0.5rem;
   padding-top: 0.5rem;
   margin-right: 60.5rem;
+  /* font-size: 0.7rem; */
   border-bottom: 0.1rem solid rgb(218, 165, 32);
 }
 
-.hero .row .cta:hover {
+.hero .row .cta a:hover {
   background-color: rgba(218, 165, 32, 0.137);
   padding-left: 0.5rem;
   margin-right: 60.5rem;
@@ -99,6 +110,343 @@ section {
 
 .hero .row .hero-photo img {
   /* background-color: violet; */
+  position: relative;
+  height: 600px;
+  top: -29rem;
+  right: 2rem;
   float: right;
   /* display: inline; */
+}
+
+.hero .bg-teks {
+  position: relative;
+  /* background-color: aqua; */
+  margin-right: 600px;
+  top: -355px;
+  z-index: -1;
+}
+
+.hero .bg-teks h1 {
+  font-size: 5rem;
+  color: rgba(255, 255, 255, 0.075);
+  line-height: 4.5rem;
+  font-weight: 700;
+}
+
+.gradient-bawah {
+  height: 2rem;
+  /* display: block; */
+  position: absolute;
+  width: 100%;
+  height: 20%;
+
+  bottom: -5rem;
+  /* float: ; */
+  background: linear-gradient(
+    0deg,
+    rgba(1, 1, 3, 1) 8%,
+    rgba(255, 255, 255, 0) 25%
+  );
+}
+
+/* About Section */
+
+.about {
+  margin-top: 10rem;
+  /* margin-top: 100rem; */
+}
+
+.about .row .content {
+  margin-right: 50%;
+  /* background-color: blueviolet */
+}
+.about .row .content h4 {
+  /* background-color: blue; */
+  font-size: 1rem;
+  margin-bottom: 1.6rem;
+  color: goldenrod;
+}
+
+.about .row .content h1 {
+  /* background-color: crimson; */
+  font-size: 3rem;
+}
+
+.about .row .cta {
+  margin-top: 1rem;
+}
+
+.about .row .cta a {
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+  border-bottom: 0.1rem solid rgb(218, 165, 32);
+}
+
+.about .row .cta a:hover {
+  background-color: rgba(218, 165, 32, 0.137);
+  padding-left: 0.5rem;
+  transition: 0.2s linear;
+}
+
+.about .row .paragraf {
+  margin: 3rem 0;
+}
+
+.about .row .paragraf p {
+  /* background-color: blueviolet; */
+  margin: 0 16rem;
+  position: relative;
+  top: -22.5rem;
+  right: -16rem;
+  text-align: justify;
+  color: rgba(255, 255, 255, 0.466);
+}
+
+/* Proses Section  */
+.proses {
+  /* position: relative; */
+  margin-top: -12rem;
+  /* background-color: aqua; */
+  /* max-width: fit-content; */
+  max-height: 600px;
+}
+
+.proses h1,
+.project h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+}
+
+.proses h1 span,
+.project h1 span {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: goldenrod;
+}
+
+.proses .content {
+  margin-left: 0;
+  display: flex;
+  /* background-color: aqua; */
+}
+
+.proses .content .menu h2 {
+  /* font-size: 2rem */
+  margin-bottom: 1.2rem;
+}
+
+.proses .content .menu p {
+  line-height: 2rem;
+  color: rgba(255, 255, 255, 0.733);
+}
+
+.proses .content2 {
+  margin-top: 4rem;
+  margin-left: 0;
+  display: flex;
+  /* background-color: rgb(136, 255, 0); */
+}
+
+.proses .content2 .menu {
+  padding-right: 6rem;
+}
+
+.proses .content2 .menu h2 {
+  /* font-size: 2rem */
+  margin-bottom: 1.2rem;
+}
+
+.proses .content2 .menu p {
+  line-height: 2rem;
+  color: rgba(255, 255, 255, 0.733);
+}
+
+.proses .content2 .menu3 h2,
+.proses .content .menu3 h2 {
+  /* font-size: 2rem */
+  margin-bottom: 1.2rem;
+}
+
+.proses .content .menu3,
+.proses .content2 .menu3 {
+  padding-left: 2rem;
+}
+
+.menu3 p {
+  line-height: 2rem;
+  color: rgba(255, 255, 255, 0.733);
+}
+
+.proses .menu {
+  padding-right: 6rem;
+}
+
+.proses .number {
+  position: relative;
+}
+
+.number h1 {
+  font-size: 5rem;
+  color: rgba(255, 255, 255, 0.075);
+  /* color: black; */
+  font-weight: 700;
+  /* background-color: aqua; */
+}
+
+/* Posisi nomor */
+.proses .number .no1 {
+  position: relative;
+  z-index: -1;
+  top: -29.5rem;
+  left: -2.5rem;
+}
+
+.proses .number .no2 {
+  position: relative;
+  z-index: -1;
+  top: -40rem;
+  left: 17.4rem;
+}
+
+.proses .number .no3 {
+  position: relative;
+  z-index: -1;
+  top: -50.5rem;
+  left: 34.4rem;
+}
+
+.proses .number .no4 {
+  position: relative;
+  z-index: -1;
+  top: -45.5rem;
+  left: -2.5rem;
+}
+
+.proses .number .no5 {
+  position: relative;
+  z-index: -1;
+  top: -56rem;
+  left: 17.4rem;
+}
+
+.proses .number .no6 {
+  position: relative;
+  z-index: -1;
+  top: -66.5rem;
+  left: 34.4rem;
+}
+
+.gambar {
+  position: relative;
+  opacity: 80%;
+  float: right;
+  top: -93rem;
+  z-index: -2;
+  left: 6rem;
+}
+
+.gambar img {
+  height: 500px;
+}
+
+.project {
+  margin-top: 10rem;
+}
+
+.project h1 {
+  /* background-color: red; */
+  line-height: 3.5rem;
+  margin-right: 679px;
+  margin-bottom: 0.2rem;
+}
+
+.project .content .cta {
+  position: relative;
+  top: 370px;
+  align-items: center;
+}
+
+.project .content .cta a {
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+  border-bottom: 0.1rem solid rgb(218, 165, 32);
+}
+
+.project .content .cta a:hover {
+  background-color: rgba(218, 165, 32, 0.137);
+  padding-left: 0.6rem;
+  transition: 0.2s linear;
+}
+
+.icon {
+  margin-top: -0.2rem;
+  /* background-color: aqua; */
+}
+
+.project .gambar-pj-container {
+  width: 400px;
+  height: 300px;
+
+  /* background-color: aqua; */
+}
+
+.gambar-pj-container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.6rem;
+  border: 0.1rem solid rgb(218, 165, 32);
+}
+
+.gambar-pj-2 {
+  position: relative;
+  left: 425px;
+  bottom: 410px;
+}
+
+.gambar-pj-3 {
+  position: relative;
+  left: 425px;
+  bottom: 390px;
+}
+
+/* .gambar-pj img:hover {
+} */
+
+/* .gambar-pj img .pj2 {
+  position: relative;
+  left: 100px;
+  top: 100px;
+} */
+
+.btn-slide {
+  position: relative;
+  left: 860px;
+  bottom: 210px;
+}
+
+.btn-slide a {
+  /* background-color: aqua; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 100px;
+  border: 0.1rem solid goldenrod;
+  border-radius: 100%;
+  height: 100px;
+  left: 14px;
+  z-index: 2;
+}
+
+.btn-slide a:hover {
+  background-color: rgba(218, 165, 32, 0.144);
+  transition: linear 0.1s;
+}
+
+/* LIne */
+.line {
+  width: 100%;
+  margin-top: 100px;
+  border-bottom: 0.02rem solid rgba(255, 255, 255, 0.199);
 }
